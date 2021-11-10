@@ -5,7 +5,7 @@ import "./index.scss"
 
 // markup
 const IndexPage = () => (
-  <Provider theme={defaultTheme} height={`100%`}>
+  <Provider theme={darkTheme} height={`100%`}>
     <Layout />
   </Provider>
 )
