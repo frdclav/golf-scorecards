@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import { Provider, defaultTheme } from '@adobe/react-spectrum'
+import { Provider, darkTheme } from '@adobe/react-spectrum'
 import "./index.scss"
 
 // markup
