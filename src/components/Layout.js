@@ -66,23 +66,24 @@ const Layout = ({ children }) => {
     return (
         // <Provider theme={defaultTheme}>
 
-        <Flex direction="column" alignItems="center" gap="size-100" width="100%" height="100%">
+        <Flex data-test-id="top-most-flex" direction="column" alignItems="center" gap="size-100" width="100%" height="100%">
 
             <View
+                data-test-id="top-most-view"
                 padding="size-250"
                 gap="size-100"
             >
-                <Header>
+                <Header data-test-id="header">
                     <Heading level={3}>golf-scorecard</Heading>
                 </Header>
-                <Divider size="S" />
+                <Divider size="S" data-test-id="divider" />
                 <p> We are going to be working on a little golfscore card thing here: </p>
-                <Content>
+                <Content data-test-id="content">
                     <main>{children}</main>
-                    <Well>
+                    <Well data-test-id="well">
                         <pre>{JSON.stringify(getScorecard(), null, '\t')}</pre>
                     </Well>
-                    <Footer
+                    <Footer data-test-id="footer"
                     // style={{
                     //     marginTop: `2rem`,
                     // }}
